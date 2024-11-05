@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+
 
 def pencil_sketch(image_path, output_path):
     image = cv2.imread(image_path)
@@ -17,6 +17,7 @@ def pencil_sketch(image_path, output_path):
     cv2.imshow('Pencil Sketch', pencil_sketch_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
 
 input_image_path = 'w2.jpg'
 output_image_path = 'w2_sketch.jpg'
